@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <title>Tabs</title>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <ul class="nav nav-tabs">
+        <li><a class="active" href="#tab1" data-toggle="tab">TAB1</a></li>
+        <li><a href="#tab2" data-toggle="tab">TAB2</a></li>
+        <li><a href="#tab3" data-toggle="tab">TAB3</a></li>
+    </ul>
+</nav>
+<div class="tab-content">
+    <div class="tab-pane active" id="tab1"><p>this is tab1</p></div>
+    <div class="tab-pane" id="tab2"><p>this is tab2</p></div>
+    <div class="tab-pane" id="tab3"><p>this is tab3</p></div>
+</div>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('.tabs a:last').tab('show');
+    });
+</script>
+</body>
+</html>
