@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>响应式设计</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style type="text/css">
+        #pagewrap{
+            width: 960px;
+            margin: 20px auto;
+            padding: 5px;
+        }
+        #header{
+            height: 180px;
+        }
+        #content{
+            width: 600px;
+            float: left;
+        }
+        #sidebar{
+            width: 300px;
+            float: right;
+        }
+        #footer{
+            clear: both;
+        }
+        /*for 980px or less*/
+        @media screen and (max-width: 980px) {
+            #pagewrap{
+                width:94%;
+            }
+            #content{
+                width:64%;
+            }
+            #sidebar{
+                width:30%;
+            }
+        }
+        /*for 700px or less*/
+        @media screen and (max-width: 700px){
+            #content{
+                width:auto;
+                float: none;
+            }
+            #sidebar{
+                width:auto;
+                float:none;
+            }
+        }
+        /*for 480px or less*/
+        @media screen and (max-width:480px){
+            #header{
+                height:auto;
+            }
+            h1{
+                font-size:24px;
+            }
+            #sidebar{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="pagewrap">
+    <div id="header">
+        <h1>header</h1>
+    </div>
+    <div id="content">
+        <h2>content</h2>
+    </div>
+    <div id="sidebar">
+        <h2>Sidebar</h2>
+    </div>
+    <div id="footer">
+        <h4>footer</h4>
+    </div>
+</div>
+</body>
+</html>
