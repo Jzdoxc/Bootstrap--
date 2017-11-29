@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+<input type="text" placeholder="文本框默认值">
+<textarea rows="3">3行的文本框</textarea>
+<label class="checkbox checkbox-inline">
+    <input type="checkbox" value="">复选框
+</label>
+<label class="radio radio-inline">
+    <input type="radio" name="optionsRadios" value="option1" checked>男
+</label>
+<label class="radio radio-inline" >
+    <input type="radio" name="optionsRadios" value="option2" >女
+</label>
+<p>
+    你来自哪个城市
+    <select name="选择城市" >
+        <optgroup label="山东省">
+            <option value="潍坊">潍坊</option>
+            <option value="青岛" selected="selected">青岛</option>
+        </optgroup>
+    </select>
+</p>
+<!--缀饰文本框-->
+<div class="row">
+    <span class=" col-md-8">Email</span>
+    <input type="text" class="col-md-4" placeholder="xxx@xxx.com" Bootstarp3已不支持>
+</div>
+<h3>用户登录</h3>
+<form action="" class="form-horizontal">
+    <div class="form-group">
+        <div class="control-label">
+            <label for="username">用户名:</label>
+        </div>
+        <div class="form-control">
+            <input type="text" id="username" class="input"/>
+        </div>
+        <div class="control-label">
+            <label for="password">密码:</label>
+        </div>
+        <div class="form-control">
+            <input type="password" id="password"/>
+        </div>
+        <div class="control-label">
+            <label for="email">邮箱</label>
+        </div>
+        <div class="form-control">
+            <input type="email" id="email"/>
+        </div>
+    </div>
+    <input type="text" ><span class="help-block">帮助文本</span>
+
+</form>
+
+</body>
+
+
+</html>
