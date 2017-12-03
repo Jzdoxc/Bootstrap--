@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>各种组件</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="dropdown">
+    <a href="" class="btn btn-lg btn-primary" data-toggle="dropdown">激活按钮<span class="glyphicon-arrow-down"></span></a>
+    <ul class="dropdown-menu">
+        <li><a href="">菜单1</a></li>
+        <li><a href="">菜单2</a></li>
+        <li><a href="">菜单3</a></li>
+    </ul>
+</div>
+<ul class="nav nav-pills">
+    <li class="dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown" >菜单项目1 <b class="caret"></b></a>
+        <ul id="menu1" class="dropdown-menu">
+            <li><a href="">子菜单1</a></li>
+        </ul>
+    </li>
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">菜单项目2 <b class="caret"></b></a>
+        <ul id="menu2" class="dropdown-menu">
+            <li><a href="">子菜单2</a></li>
+        </ul>
+    </li>
+</ul>
+<ul class="nav nav-pills">
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">菜单项目1 <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+            <li><a href="#">子项目1</a></li>
+        </ul>
+    </li>
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">菜单项目2 <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+            <li><a href="#">子项目1</a></li>
+        </ul>
+    </li>
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">菜单项目3 <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+            <li class="dropdown-submenu"><a href="#">子项目1</a>
+                <ul class="dropdown-menu">
+                    <li><a href="">123</a></li>
+                    <li><a href="">123</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+<!--<span class="glyphicon-search"></span>-->
+</ul>
+<nav class="navbar navbar-default  ">
+    <ul class="nav  nav-tabs">
+        <li><a href="#tab1" data-toggle="tab" class="active">tab1</a></li>
+        <li class="disabled"><a href="#tab2" data-toggle="tab">tab2</a></li>
+        <li><a href="#tab3" data-toggle="tab">tab3</a></li>
+    </ul>
+</nav>
+<div class="tab-content">
+    <div class="tab-pane fade active"  id="tab1">1</div>
+    <div class="tab-pane fade"  id="tab2">2</div>
+    <div class="tab-pane fade"  id="tab3">3</div>
+</div>
+<ul class="nav nav-tabs">
+    <li><a href="">菜单1</a></li>
+    <li><a href="">惨淡2</a></li>
+    <li><a href="" class="dropdown-toggle" data-toggle="dropdown">菜单3</a>
+        <ul class="dropdown-menu">
+            <li><a href="">子弹餐</a></li>
+            <li><a href="">副科级</a></li>
+            <li><a href="">等分等分</a></li>
+        </ul>
+    </li>
+</ul>
+<ul class="nav ">
+    <li class="active"><a href="">微博</a></li>
+    <li><a href="">博客</a>
+        <ul class="nav">
+            <li><a href="">QQ</a></li>
+            <li><a href="">360</a></li>
+            <li><a href="">阿里巴巴</a></li>
+        </ul>
+    </li>
+    <li><a href="">心凉</a></li>
+</ul>
+<div class="navbar">
+    <div >
+        <ul>
+            <li>标题1</li>
+            <li>标题2</li>
+            <li>标题3</li>
+        </ul>
+    </div>
+</div>
+<span class="label ">默认</span>
+<span class="label label-success">成功</span>
+<span class="label label-warning">警告</span>
+<span class="label label-danger">危险</span>
+<span class="label label-primary">正常</span>
+<span class="label label-info">提示</span>
+<div class="alert-danger">
+    <button type="button" class="close" >&times;</button>
+    <strong>警告！</strong>
+</div>
+<div class="alert-info"><strong>警告！</strong></div>
+<div class="alert-success"><strong>警告！</strong></div>
+<div class="alert-warning"><strong>警告！</strong></div>
+<div class="progress progress-striped ">
+    <div class="progress-bar" style="width: 100%;"></div>
+</div>
+<div class="progress progress-bar-info progress-striped ">
+    <div class="progress-bar" style="width: 20%;"></div>
+</div>
+<div class="progress progress-bar-success progress-striped ">
+    <div class="progress-bar" style="width: 30%;"></div>
+</div>
+<div class="progress  progress-bar-warning progress-striped ">
+    <div class="progress-bar" style="width: 40%;"></div>
+</div>
+<div class="progress  progress-bar-danger progress-striped ">
+    <div class="progress-bar" style="width: 50%;"></div>
+</div>
+</body>
+</html>
